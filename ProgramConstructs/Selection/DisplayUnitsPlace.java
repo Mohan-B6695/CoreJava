@@ -6,8 +6,8 @@ public class DisplayUnitsPlace {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the input");
-        String value = scan.next();
-        switch (value.length()) {
+        String choice = scan.next();
+        switch (choice.length()) {
             case 1:
                 System.out.println("Units");
                 break;
@@ -25,7 +25,7 @@ public class DisplayUnitsPlace {
                 break;
             default:
                 System.out.println("Infinity");
-                throw new IllegalArgumentException("Unexpected value: " + value);
+                throw new IllegalArgumentException("Unexpected value: " + choice);
         }
     }
 }
